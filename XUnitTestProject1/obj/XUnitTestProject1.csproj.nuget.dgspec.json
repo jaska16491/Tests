@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Katarzyna\\Desktop\\Library-master\\XUnitTestProject1\\XUnitTestProject1.csproj": {}
+    "C:\\Library-master\\XUnitTestProject1\\XUnitTestProject1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Katarzyna\\Desktop\\Library-master\\Api\\Library.csproj": {
+    "C:\\Library-master\\Api\\Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Katarzyna\\Desktop\\Library-master\\Api\\Library.csproj",
+        "projectUniqueName": "C:\\Library-master\\Api\\Library.csproj",
         "projectName": "Library",
-        "projectPath": "C:\\Users\\Katarzyna\\Desktop\\Library-master\\Api\\Library.csproj",
+        "projectPath": "C:\\Library-master\\Api\\Library.csproj",
         "packagesPath": "C:\\Users\\Katarzyna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Katarzyna\\Desktop\\Library-master\\Api\\obj\\",
+        "outputPath": "C:\\Library-master\\Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -90,9 +90,21 @@
               "target": "Package",
               "version": "[2.2.4, )"
             },
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.9.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.3, )"
+            },
+            "Rollbar": {
+              "target": "Package",
+              "version": "[3.9.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -117,14 +129,14 @@
         }
       }
     },
-    "C:\\Users\\Katarzyna\\Desktop\\Library-master\\XUnitTestProject1\\XUnitTestProject1.csproj": {
+    "C:\\Library-master\\XUnitTestProject1\\XUnitTestProject1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Katarzyna\\Desktop\\Library-master\\XUnitTestProject1\\XUnitTestProject1.csproj",
+        "projectUniqueName": "C:\\Library-master\\XUnitTestProject1\\XUnitTestProject1.csproj",
         "projectName": "XUnitTestProject1",
-        "projectPath": "C:\\Users\\Katarzyna\\Desktop\\Library-master\\XUnitTestProject1\\XUnitTestProject1.csproj",
+        "projectPath": "C:\\Library-master\\XUnitTestProject1\\XUnitTestProject1.csproj",
         "packagesPath": "C:\\Users\\Katarzyna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Katarzyna\\Desktop\\Library-master\\XUnitTestProject1\\obj\\",
+        "outputPath": "C:\\Library-master\\XUnitTestProject1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -145,8 +157,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\Katarzyna\\Desktop\\Library-master\\Api\\Library.csproj": {
-                "projectPath": "C:\\Users\\Katarzyna\\Desktop\\Library-master\\Api\\Library.csproj"
+              "C:\\Library-master\\Api\\Library.csproj": {
+                "projectPath": "C:\\Library-master\\Api\\Library.csproj"
               }
             }
           }

@@ -11,7 +11,7 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\Katarzyna\\Desktop\\Library-master\\Api", "Library.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Library-master\\Api", "Library.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("XUnitTestProject1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

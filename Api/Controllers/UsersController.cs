@@ -1,17 +1,22 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Library.Models.DTO;
 using Library.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Rollbar;
 
 namespace Library.Controllers
 {
     [Route("api/users")]
     public class UsersController : Controller
     {
+        private readonly ILogger<UsersController> _logger;
         private readonly IUserRepository _userRepository;
 
-        public UsersController(IUserRepository userRepository)
+        public UsersController(IUserRepository userRepository, ILogger<UsersController> logger)
         {
+            _logger = logger;
             _userRepository = userRepository;
         }
 
@@ -19,6 +24,7 @@ namespace Library.Controllers
         [HttpGet]
         public async Task<IActionResult> GetUsers()
         {
+            RollbarLocator.RollbarInstance.Error(new Exception("Błąd z Rollbar"));
             var res = await _userRepository.GetUsers();
             return Ok(res);
         }

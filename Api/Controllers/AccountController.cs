@@ -8,22 +8,27 @@ using Library.Models.DTO;
 using Library.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 
 namespace Library.Controllers
 {
     [Route("api/account")]
     public class AccountController : Controller
+
     {
+
+        private readonly ILogger<AccountController> _logger;
         private readonly IAccountRepository _accountRepository;
         private readonly IConfiguration _configuration;
 
         private const int TokenExpDurationInMin = 2;
 
-        public AccountController(IAccountRepository accountRepository, IConfiguration configuration)
+        public AccountController(IAccountRepository accountRepository, IConfiguration configuration, ILogger<AccountController> logger)
         {
             _accountRepository = accountRepository;
             _configuration = configuration;
+            _logger = logger;
         }
 
 
